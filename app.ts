@@ -127,14 +127,6 @@ console.log(isActive);
 
 
 
-
-
-
-
-
-
-
-
 // basic method of arrays 
 // map
  {
