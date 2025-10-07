@@ -70,15 +70,15 @@ console.log(isActive);
 // read only
 // const names: readonly string[] = ["Dylan", "Jack"];
 
-// // ✅ Read karna allowed
+// // Read karna allowed
 // console.log(names[0]); // "Dylan"
 
-// // ✅ Loop lagana allowed
+// //  Loop lagana allowed
 // for (let n of names) {
 //   console.log(n);
 // }
 
-// // ✅ Filter/map return new array (but readonly array khud change nahi hoti)
+// // Filter/map return new array (but readonly array khud change nahi hoti)
 // const upper = names.map(n => n.toUpperCase());
 // console.log(upper); // ["DYLAN", "JACK"]
 
