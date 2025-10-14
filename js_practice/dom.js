@@ -165,6 +165,7 @@ let texted = "SGVsbG8gQWp3YQ==";
 let decoded = atob(texted);
 console.log(decoded);
 
+// Getter and Setter
 
 class Person {
   constructor(name) {
@@ -191,15 +192,18 @@ p1.name = "Hina";     // ← yahaan bhi setter call hua, bina function likhe
 
 // without  static method 
 
-// class Student{
-//   sayHi() {
-//     console.log("Hello Student!");
-//   }
-// }
-// const s1 = new Student();
-// s1.sayHi();
+class Student{
+  sayHi() {
+    console.log("Hello Student!");
+  }
+}
+const s1 = new Student();
+s1.sayHi();
+
+
 
 //With Static Mehthod
+
 class Students{
   static sayHi() {
     console.log("hello Students!")
@@ -210,28 +214,28 @@ Students.sayHi();
 
 
 // static method 
-class Student {
-  constructor(name, stdname) {
-    this.name = name;
-    this.std = stdname;
-  }
+// class Student {
+//   constructor(name, stdname) {
+//     this.name = name;
+//     this.std = stdname;
+//   }
 
-  sayHi() {
-    console.log(`all the students are study in ${this.name}`);
-  }
+//   sayHi() {
+//     console.log(`all the students are study in ${this.name}`);
+//   }
 
-  static schoolinfo(stdobj){
-    console.log(`hello, i am ${stdobj.Student}`)
-  }
+//   static schoolinfo(stdobj){
+//     console.log(`hello, i am ${stdobj.Student}`)
+//   }
 
-}
+// }
 
-const s1 = new Student('example','ajwa' );
+// const s2 = new Student('example','ajwa' );
 
-s1.sayHi();
+// s2.sayHi();
 
 
-Student.schoolinfo(s1);
+// Student.schoolinfo(s2);
 
 
 
@@ -252,3 +256,33 @@ Student.schoolinfo(s1);
 
 
 // getter and setter 
+
+const person = {
+  firstName: "ajwa",
+  lastName: "mujahid",
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+};
+
+console.log(person.fullName); 
+
+
+{
+const person = {
+  firstName: "ajwa",
+  lastName: "mujahid",
+  
+  set fullName(name) {
+    const parts = name.split(" ");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  }
+};
+
+person.fullName = "AJWA MUJAHID";
+console.log(person.firstName); 
+console.log(person.lastName);  
+}
+
+
