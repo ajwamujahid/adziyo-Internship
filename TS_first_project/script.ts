@@ -8,7 +8,7 @@ interface Student {
 const nameInput = document.getElementById("studentName") as HTMLInputElement;
 const ageInput = document.getElementById("studentAge") as HTMLInputElement;
 const courseInput = document.getElementById("Course") as HTMLInputElement;
-const addBtn = document.getElementById("addBtn") as HTMLButtonElement;
+// const addBtn = document.getElementById("addBtn") as HTMLButtonElement;
 const studentTable = document.getElementById(
   "studentTable"
 ) as HTMLTableSectionElement;

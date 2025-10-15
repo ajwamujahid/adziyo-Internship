@@ -2,7 +2,7 @@
 const nameInput = document.getElementById("studentName");
 const ageInput = document.getElementById("studentAge");
 const courseInput = document.getElementById("Course");
-const addBtn = document.getElementById("addBtn");
+// const addBtn = document.getElementById("addBtn") as HTMLButtonElement;
 const studentTable = document.getElementById("studentTable");
 let students = [];
 let editId = null;
