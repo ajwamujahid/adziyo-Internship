@@ -1,11 +1,7 @@
 // js_practice/app.ts
-import { Product } from "./script";
-const product = new Product("Samsung", 10000, 101);
-console.log(product.name);
-
-
-
-
+// import { Product } from "./script.js";
+// const product = new Product("Samsung", 10000, 101);
+// console.log(product.name);
 // union type
 // {
 // let person: string | number | boolean;
