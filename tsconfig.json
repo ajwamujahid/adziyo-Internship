@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "ES6",
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "./dist",
     "rootDir": "./",
-    "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "lib": ["ES2015", "DOM"],
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
   },
-  "include": ["./**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["**/*.ts"]
 }
