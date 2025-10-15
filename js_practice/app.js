@@ -1,3 +1,4 @@
+"use strict";
 // js_practice/app.ts
 // import { Product } from "./script.js";
 // const product = new Product("Samsung", 10000, 101);

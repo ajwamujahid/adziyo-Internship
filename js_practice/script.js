@@ -1,3 +1,4 @@
+"use strict";
 // interface Info{
 //     name:string;
 //     age:number;
@@ -28,27 +29,26 @@
 //     subject:'urdu'
 //  }
 // classes
-var Product = /** @class */ (function () {
-    function Product(name, price, pid) {
+class Product {
+    constructor(name, price, pid) {
         this.inCart = false;
         this.isOrder = false;
         this.name = name;
         this.price = price;
         this.pId = pid;
     }
-    Product.prototype.addToCart = function () {
+    addToCart() {
         this.inCart = true;
-    };
-    Product.prototype.buyProduct = function () {
+    }
+    buyProduct() {
         if (this.inCart) {
-            return "Product ".concat(this.name, " is ordered for ").concat(this.price);
+            return `Product ${this.name} is ordered for ${this.price}`;
         }
         else {
-            return "product not found";
+            return `product not found`;
         }
-    };
-    return Product;
-}());
+    }
+}
 var product = new Product("Samsung", 10000, 101);
 product.addToCart();
 console.log(product.buyProduct());
@@ -80,31 +80,30 @@ console.log(product2.name);
 function fruits(name) {
     return name;
 }
-var onlyFruit = fruits("apple");
-var onlyNum = fruits(100);
-var onlyBool = fruits(true);
+let onlyFruit = fruits("apple");
+let onlyNum = fruits(100);
+let onlyBool = fruits(true);
 // function with array
 function printArray(items) {
-    items.forEach(function (item) { return console.log(item); });
+    items.forEach((item) => console.log(item));
 }
 printArray([1, 2, 3]);
 printArray(["a", "b", "c"]);
 // with classes
-var Box = /** @class */ (function () {
-    function Box(value) {
+class Box {
+    constructor(value) {
         this.content = value;
     }
-    Box.prototype.show = function () {
-        console.log("Box contains: ".concat(this.content));
-    };
-    return Box;
-}());
-var stringBox = new Box("Toys");
-var numberBox = new Box(123);
+    show() {
+        console.log(`Box contains: ${this.content}`);
+    }
+}
+const stringBox = new Box("Toys");
+const numberBox = new Box(123);
 stringBox.show();
 numberBox.show();
 function greet(person) {
-    console.log("Hello, ".concat(person.name));
+    console.log(`Hello, ${person.name}`);
 }
 greet({ name: "Ajwa" });
 // greet({ age: 25 });            
